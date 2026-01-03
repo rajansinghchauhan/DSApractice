@@ -25,3 +25,18 @@ using DSApractice;
 //Console.ReadKey();
 #endregion DiagonalDifference
 
+#region RatioPlusMinus
+//int n = Convert.ToInt32(Console.ReadLine().Trim());
+//List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+//RatioPlusMinus ratioPlusMinus = new RatioPlusMinus();
+//ratioPlusMinus.plusMinus(arr);
+////Console.ReadKey();
+#endregion RatioPlusMinus
+
+#region MinMaxSum
+List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+MinMaxSum minMaxSum = new MinMaxSum();
+minMaxSum.miniMaxSum(arr);
+Console.ReadKey();
+#endregion MinMaxSum
+
