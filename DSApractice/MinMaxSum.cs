@@ -8,21 +8,21 @@ namespace DSApractice
 {
     public class MinMaxSum
     {
-        public void miniMaxSum(List<int> arr)
+        public void miniMaxSum(List<long> arr)
         {
-            int minumum = 0;
-            int maximum = 0;
-            for (int i = 0; i < arr.Count - 1; i++)
+            long minumum = 0;
+            long maximum = 0;
+            List<long> listSum = new List<long>();
+
+            for (int i = 0; i < arr.Count; i++)
             {
-                minumum = minumum + arr[i];
+                // Sum all elements except the one at index i
+                long sum = arr.Where((val, idx) => idx != i).Sum();
+                listSum.Add(sum);
             }
-            for (int i = arr.Count - 1; i > 1; i--)
-            {
-                maximum = minumum + arr[i];
-            }
-            Console.Write(minumum);
+            Console.Write(minumum = listSum.Min());
             Console.Write(" ");
-            Console.Write(maximum);
+            Console.Write(maximum = listSum.Max());
         }
     }
 }

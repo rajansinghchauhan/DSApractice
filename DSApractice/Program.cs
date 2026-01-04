@@ -2,6 +2,8 @@
 //Console.WriteLine("Hello, World!");
 
 using DSApractice;
+using HackerRank;
+using System.IO;
 
 #region compare
 //List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
@@ -34,9 +36,24 @@ using DSApractice;
 #endregion RatioPlusMinus
 
 #region MinMaxSum
-List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
-MinMaxSum minMaxSum = new MinMaxSum();
-minMaxSum.miniMaxSum(arr);
-Console.ReadKey();
+//List<long> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt64(arrTemp)).ToList();
+//MinMaxSum minMaxSum = new MinMaxSum();
+//minMaxSum.miniMaxSum(arr);
+//Console.ReadKey();
 #endregion MinMaxSum
+
+#region BirthdayCandle
+//BirthdayCandel birthdayCandel = new BirthdayCandel();
+//int candlesCount = Convert.ToInt32(Console.ReadLine().Trim());
+//List<int> candles = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(candlesTemp => Convert.ToInt32(candlesTemp)).ToList();
+//int result = birthdayCandel.birthdayCakeCandles(candles);
+#endregion BirthdayCandle
+
+#region TimeConversion
+string s = Console.ReadLine();
+TimeConversion timeConversion = new TimeConversion();
+string result = timeConversion.timeConversion(s);
+Console.WriteLine(result);
+Console.ReadKey();
+#endregion TimeConversion
 
