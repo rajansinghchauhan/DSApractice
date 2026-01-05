@@ -50,10 +50,27 @@ using System.IO;
 #endregion BirthdayCandle
 
 #region TimeConversion
-string s = Console.ReadLine();
-TimeConversion timeConversion = new TimeConversion();
-string result = timeConversion.timeConversion(s);
-Console.WriteLine(result);
-Console.ReadKey();
+//string s = Console.ReadLine();
+//TimeConversion timeConversion = new TimeConversion();
+//string result = timeConversion.timeConversion(s);
+//Console.WriteLine(result);
+//Console.ReadKey();
 #endregion TimeConversion
+
+#region Grading
+//Grading grading = new Grading();
+//int gradesCount = Convert.ToInt32(Console.ReadLine().Trim());
+//List<int> grades = new List<int>();
+//for (int i = 0; i < gradesCount; i++)
+//{
+//    int gradesItem = Convert.ToInt32(Console.ReadLine().Trim());
+//    grades.Add(gradesItem);
+//}
+//List<int> result = grading.GradingStudents(grades);
+//Console.WriteLine(result);
+//Console.ReadKey();
+#endregion Grading
+
+#region
+#endregion
 
